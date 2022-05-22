@@ -41,7 +41,7 @@ You can now access the server at http://localhost:8000
 **TL;DR command list**
 
     git clone https://github.com/syedmahroof/robotapocalypse.git
-    cd laravel-realworld-example-app
+    cd robotapocalypse
     composer install
     cp .env.example .env
     php artisan key:generate
@@ -65,7 +65,7 @@ To install with [Docker](https://www.docker.com), run following commands:
 
 ```
 git clone https://github.com/syedmahroof/robotapocalypse.git
-cd laravel-realworld-example-app
+cd robotapocalypse
 cp .env.example.docker .env
 docker run -v $(pwd):/app composer install
 cd ./docker
