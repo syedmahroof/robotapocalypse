@@ -4,12 +4,12 @@
 
 ## Installation
 
-Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.4/installation#installation)
+Please check the official laravel installation guide for server requirements before you start.
 
 
 Clone the repository
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+    git clone [git@github.com:gothinkster/laravel-realworld-example-app.git](https://github.com/syedmahroof/robotapocalypse.git)
 
 Switch to the repo folder
 
@@ -64,7 +64,7 @@ Run the database seeder
 To install with [Docker](https://www.docker.com), run following commands:
 
 ```
-git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+git clone [git@github.com:gothinkster/laravel-realworld-example-app.git](https://github.com/syedmahroof/robotapocalypse.git)
 cd laravel-realworld-example-app
 cp .env.example.docker .env
 docker run -v $(pwd):/app composer install
