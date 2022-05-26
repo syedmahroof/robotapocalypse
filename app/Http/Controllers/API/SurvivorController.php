@@ -27,11 +27,11 @@ class SurvivorController extends BaseController
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required',
-            'age' => 'required',
-            'gender' => 'required',
+            'age' => 'required|numeric|gt:0',
+            'gender' => 'required|in:male,female',
             'latitude' => '',
             'longitude' => '',
-            'inventory_resource' => '',
+            'inventory_resource' => 'array',
         ]);
 
         if ($validator->fails()) {
@@ -74,12 +74,11 @@ class SurvivorController extends BaseController
         $validator = Validator::make($request->all(), [
             'survivor_id' => 'required',
             'name' => 'required',
-            'age' => 'required',
-            'gender' => 'required',
+            'age' => 'required|numeric|gt:0',
+            'gender' => 'required|in:male,female',
             'latitude' => '',
             'longitude' => '',
-
-
+            'inventory_resource' => 'array',
         ]);
 
         if ($validator->fails()) {

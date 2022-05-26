@@ -1,8 +1,6 @@
 <?php
 
-use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\ReportController;
-use App\Http\Controllers\API\RobotController;
 use App\Http\Controllers\API\SurvivorController;
 use Illuminate\Support\Facades\Route;
 
