@@ -66,15 +66,14 @@ To install with [Docker](https://www.docker.com), run following commands:
 ```
 git clone https://github.com/syedmahroof/robotapocalypse.git
 cd robotapocalypse
-cp .env.example.docker .env
-docker run -v $(pwd):/app composer install
-cd ./docker
-docker-compose up -d
-docker-compose exec php php artisan key:generate
-docker-compose exec php php artisan migrate
-docker-compose exec php php artisan db:seed
-docker-compose exec php php artisan serve --host=0.0.0.0
-```
+cp .env.example .env
+composer install
+./vendor/bin/sail up -d
+ ./vendor/bin/sail artisan key:generate
+ ./vendor/bin/sail artisan migrate
+ ./vendor/bin/sail artisan db:seed
+
+
 
 The api can be accessed at [http://localhost:8000/api](http://localhost:8000/api).
 
